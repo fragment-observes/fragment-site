@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>今日の国会 2026年10月8日｜フラグメント観測</title>
+<style>
+  :root{
+    --bg:#101216; --panel:#171a20; --panel2:#1d212a; --line:#2a2f3a;
+    --text:#e8e6e1; --sub:#a5a49e; --faint:#767670;
+    --accent:#c8aa6e; --accent2:#7ea6c9;
+    --badge:#232833;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{background:var(--bg);color:var(--text);font-family:"Hiragino Kaku Gothic ProN","Hiragino Sans","Noto Sans JP",sans-serif;line-height:1.75;font-size:15px;}
+  a{color:var(--accent2);}
+  .wrap{max-width:860px;margin:0 auto;padding:24px 16px 64px;}
+  header.site{border-bottom:1px solid var(--line);padding-bottom:16px;margin-bottom:20px;}
+  .brand{font-size:12px;letter-spacing:.18em;color:var(--faint);}
+  h1{font-size:26px;font-weight:700;margin:6px 0 2px;}
+  .date-line{color:var(--sub);font-size:14px;}
+  .policy{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin:18px 0;font-size:13.5px;color:var(--sub);}
+  .policy b{color:var(--text);}
+  .policy ol{margin:6px 0 6px 20px;}
+  h2.sec{font-size:18px;margin:30px 0 12px;padding-left:10px;border-left:3px solid var(--accent);}
+  .summary-box{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:14px 16px;font-size:14px;}
+  .summary-box li{margin-left:18px;margin-bottom:4px;}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:20px 18px;margin-bottom:22px;}
+  .card-head{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:6px;}
+  .house{font-size:13px;background:var(--badge);border:1px solid var(--line);border-radius:999px;padding:2px 10px;color:var(--sub);}
+  .stage{font-size:13px;border-radius:999px;padding:2px 10px;border:1px solid var(--accent);color:var(--accent);}
+  .card h3{font-size:19px;line-height:1.5;margin:4px 0 2px;}
+  .card .meta{font-size:13px;color:var(--faint);margin-bottom:12px;}
+  .decided{font-size:14px;background:var(--panel2);border-radius:8px;padding:10px 12px;margin-bottom:14px;}
+  .decided b{color:var(--accent);}
+  .qa{border-top:1px solid var(--line);padding:14px 0 4px;}
+  .qa:first-of-type{border-top:none;}
+  .speaker{font-size:15px;font-weight:700;}
+  .speaker .party{font-weight:400;font-size:13px;color:var(--sub);margin-left:6px;}
+  .qa h4{font-size:13px;color:var(--accent);margin:10px 0 4px;letter-spacing:.05em;}
+  .qa ul{margin-left:18px;font-size:14px;}
+  .qa ul li{margin-bottom:5px;}
+  blockquote{border-left:3px solid var(--accent2);background:var(--panel2);padding:10px 12px;margin:10px 0;font-size:13.5px;color:var(--text);border-radius:0 8px 8px 0;}
+  blockquote .src{display:block;margin-top:6px;font-size:12px;color:var(--faint);}
+  .links{font-size:13px;margin-top:10px;}
+  .links a{margin-right:14px;}
+  .term{background:none;border:none;border-bottom:1px dotted var(--accent);color:inherit;font:inherit;cursor:pointer;padding:0;}
+  .term:hover{color:var(--accent);}
+  .glossary{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:8px;}
+  .glossary button{background:var(--panel);border:1px solid var(--line);border-radius:8px;color:var(--text);padding:9px 10px;font-size:14px;cursor:pointer;text-align:left;}
+  .glossary button:hover{border-color:var(--accent);}
+  .basics{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px;font-size:14px;}
+  .basics h3{font-size:15px;margin:12px 0 4px;color:var(--accent);}
+  .basics h3:first-child{margin-top:0;}
+  .basics ol,.basics ul{margin-left:20px;}
+  footer.site{margin-top:40px;border-top:1px solid var(--line);padding-top:14px;font-size:12.5px;color:var(--faint);}
+  /* 用語シート */
+  .sheet-back{position:fixed;inset:0;background:rgba(0,0,0,.55);display:none;z-index:40;}
+  .sheet{position:fixed;left:0;right:0;bottom:0;background:var(--panel2);border-top:1px solid var(--line);border-radius:16px 16px 0 0;padding:20px 18px 28px;transform:translateY(105%);transition:transform .25s ease;z-index:50;max-width:860px;margin:0 auto;}
+  .sheet.open{transform:translateY(0);}
+  .sheet-back.open{display:block;}
+  .sheet h3{font-size:18px;margin-bottom:2px;}
+  .sheet .yomi{font-size:12.5px;color:var(--faint);margin-bottom:8px;}
+  .sheet p{font-size:14.5px;}
+  .sheet .close{position:absolute;top:12px;right:14px;background:var(--badge);border:1px solid var(--line);color:var(--text);border-radius:999px;width:32px;height:32px;font-size:16px;cursor:pointer;}
+  @media (max-width:560px){ h1{font-size:22px;} .card{padding:16px 13px;} }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="site">
+  <div class="brand">フラグメント観測</div>
+  <h1>今日の国会</h1>
+  <div class="date-line">2026年10月8日（木）｜第222回国会（臨時会）｜衆議院・参議院の本会議</div>
+</header>
+
+<div class="policy">
+  <b>このページの並び順について</b><br>
+  議題の並び順は、編集者の判断ではなく、手続きの重さで機械的に決めています。
+  <ol>
+    <li><button class="term" data-term="採決">採決</button>があった議題</li>
+    <li>法案の段階が進んだ議題（<button class="term" data-term="付託">付託</button>・委員会報告・可決など）</li>
+    <li><button class="term" data-term="質疑">質疑</button>のみの議題</li>
+  </ol>
+  2026年10月8日は、両院とも採決・法案の手続きがなく、全ての議題が「3. 質疑のみ」に当たるため、衆議院・参議院の順に並べています。要約は「誰が・何について・何と言い・何が決まったか」の事実の圧縮のみで、評価や解釈は入れていません。与野党どちらの発言も同じ形式で扱います。専門用語は、点線の付いた語を押すと意味が表示されます。
+</div>
+
+<h2 class="sec">この日の概要</h2>
+<div class="summary-box">
+  <ul>
+    <li>両院の本会議とも、議題は内閣総理大臣の<button class="term" data-term="所信表明演説">所信表明演説</button>に対する<button class="term" data-term="質疑">質疑</button>（<button class="term" data-term="代表質問">代表質問</button>）のみでした。</li>
+    <li>採決は行われず、この日に決まった事項はありません。</li>
+    <li>衆議院では3名が質問し、質疑は終了しました。参議院では2名が質問し、残りの質疑は次会に継続されました。</li>
+  </ul>
+</div>
+
+<h2 class="sec">議題</h2>
+
+<!-- ===== 衆議院 ===== -->
+<article class="card">
+  <div class="card-head">
+    <span class="house">衆議院 本会議 第3号</span>
+    <span class="stage">区分：質疑のみ</span>
+  </div>
+  <h3>国務大臣の演説に対する質疑（前会の続）</h3>
+  <div class="meta">午後1時2分開議・午後2時59分<button class="term" data-term="散会">散会</button>｜<button class="term" data-term="議事日程">議事日程</button>第三号</div>
+
+  <div class="decided"><b>決まったこと：</b>なし。この日は質疑のみで、採決は行われませんでした。質疑はこの日で終了しました。</div>
+
+  <div class="qa">
+    <div class="speaker">玉木雄一郎<span class="party">国民民主党・無所属クラブ</span></div>
+    <h4>質問の要点</h4>
+    <ul>
+      <li>防災について、被災住宅の応急修理の上限額（75万7千円）の引上げ、生活に不可欠な機能を失ったマンション居住者への罹災証明と支援の見直し、災害対応のための補正予算の編成を求めた。</li>
+      <li>経済財政について、名目GDP成長率の見通しが3.0%、直近の10年債金利が3.1%を超えていることに触れ、リフレ政策を取るべき局面かどうかと、日本銀行の独立性についての総理の見解をただした。</li>
+      <li>成長投資について、2040年度までに17分野・370兆円とされる官民投資のうち政府支出の規模、行政手続のワンストップ化、AIデータセンターの液浸冷却に関する消防法の規制緩和を求めた。</li>
+      <li>税制について、非上場株式の評価方法の見直しを凍結すること、国債をNISAの対象に加える提案への見解を求めた。</li>
+      <li>物価高対策について、所得税・住民税の控除額を物価や賃金に連動させる仕組み、飲食料品の消費税率が8%に戻る際の中間層の負担増への対応、年内の給付の実施を求めた。</li>
+      <li>簗農林水産大臣に、栃木県那須烏山市と那珂川町の道路予算を国土交通省に問い合わせた経緯と、党の会合で予算に影響を及ぼしたかのように語った発言についてただした。</li>
+      <li>中司内閣府特命担当大臣に、後期高齢者医療制度の窓口負担を原則3割とした場合の公費負担の在り方をただした。</li>
+      <li>このほか、傷病手当金の実態調査、年金積立金の運用益による保険料の引下げ、薬価の中間年改定の廃止、年少扶養控除の復活、迎撃ドローンの調達基準、憲法改正に関する与党内の意見の整理についてただした。</li>
+    </ul>
+    <h4>答弁の要点</h4>
+    <ul>
+      <li>高市早苗 内閣総理大臣：応急修理の限度額は物価動向を踏まえて毎年見直しを行っていると述べた。経済についてはデフレではない状況であり、リフレ政策が必要な局面ではないとし、金融政策は日本銀行の自主性を最大限尊重すると述べた。非上場株式の評価方法については結論は出ておらず、令和9年度税制改正の過程でゼロベースで検討すると述べた。所得税の基礎控除等は2年ごとに物価上昇率に連動して見直すことを基本としたと述べた。</li>
+      <li>簗和生 農林水産大臣：道路予算の問合せは地元からの問合せを踏まえて国土交通省に行ったものだと述べた。会合で自身が影響を及ぼしたかのような発言をしたことについては、事実と異なる発言であったと述べた。</li>
+      <li>中司宏 内閣府特命担当大臣：高齢者の医療費の窓口負担は、年齢によらない応能負担の観点から見直しを行い、令和8年末までに結論を得るべく検討していると述べた。</li>
+    </ul>
+    <blockquote>
+      「現在、日本経済は、物価の持続的下落という意味でのデフレではない状況であり、いわゆるリフレ政策が必要な局面ではないと考えております。」
+      <span class="src">原文抜粋：高市早苗 内閣総理大臣の答弁</span>
+    </blockquote>
+    <div class="links">
+      <a href="https://kokkai.ndl.go.jp/txt/122205254X00320261008/3" target="_blank" rel="noopener">質問の原文（公式会議録）</a>
+      <a href="https://kokkai.ndl.go.jp/txt/122205254X00320261008/4" target="_blank" rel="noopener">総理答弁の原文</a>
+    </div>
+  </div>
+
+  <div class="qa">
+    <div class="speaker">豊田真由子<span class="party">参政党</span></div>
+    <h4>質問の要点</h4>
+    <ul>
+      <li>事前防災への取組と、勧告権を持つ防災庁が設置されることで防災の在り方がどう変わるかをただした。</li>
+      <li>冬に向けて電気・ガス料金への補助を再び実施する考えがあるか、エネルギーコストを構造的に引き下げる政策への転換についてただした。</li>
+      <li>対米・対中関係の戦略、防衛力整備における継戦能力の確保についてただした。</li>
+      <li>診療報酬などの改定、政府備蓄米の買戻しと米政策の方向性、衆議院議員の定数削減の必要性について見解を求めた。</li>
+    </ul>
+    <h4>答弁の要点</h4>
+    <ul>
+      <li>高市早苗 内閣総理大臣：勧告権を有する防災庁は、事前防災から発災時、復旧復興までの一貫した災害対応の司令塔となると述べた。電気・ガス料金の支援は7月から9月まで実施したもので、今後は原油やLNGの価格動向を注視し、適切に対応すると述べた。政府備蓄米は適正水準である100万トン程度に向けて回復を進めていくと述べた。</li>
+    </ul>
+    <div class="links">
+      <a href="https://kokkai.ndl.go.jp/txt/122205254X00320261008/8" target="_blank" rel="noopener">質問の原文（公式会議録）</a>
+      <a href="https://kokkai.ndl.go.jp/txt/122205254X00320261008/9" target="_blank" rel="noopener">総理答弁の原文</a>
+    </div>
+  </div>
+
+  <div class="qa">
+    <div class="speaker">古川あおい<span class="party">チームみらい</span></div>
+    <h4>質問の要点</h4>
+    <ul>
+      <li>物価高対策について、期間限定の飲食料品の消費税減税には、税率を下げた分だけ物価が下がるとは限らない等の指摘があるとし、減税と支援金制度の組合せと実施時期、財源についてただした。</li>
+      <li>歳出の見直し（いわゆる日本版DOGEの取組）と、17の戦略分野への投資の効果を検証する仕組みについてただした。</li>
+      <li>高額療養費制度の負担上限額の引上げを取りやめるべきだとし、見解を求めた。障害児福祉の所得制限の撤廃についてもただした。</li>
+      <li>AIによる雇用への影響と対策、情報漏えい事案への対応、政府の活動を外部から検証可能な形で公開することについてただした。</li>
+    </ul>
+    <h4>答弁の要点</h4>
+    <ul>
+      <li>高市早苗 内閣総理大臣：飲食料品の消費税率については、事業者のシステム改修の期間が短縮でき、令和9年4月から実施可能であり、支援金についても令和9年からの先行的な導入が可能だと述べた。</li>
+    </ul>
+    <blockquote>
+      「飲食料品の消費税率については、事業者のシステム改修の期間が短縮でき、令和九年四月から実施可能なこと」
+      <span class="src">原文抜粋：高市早苗 内閣総理大臣の答弁</span>
+    </blockquote>
+    <div class="links">
+      <a href="https://kokkai.ndl.go.jp/txt/122205254X00320261008/11" target="_blank" rel="noopener">質問の原文（公式会議録）</a>
+      <a href="https://kokkai.ndl.go.jp/txt/122205254X00320261008/12" target="_blank" rel="noopener">総理答弁の原文</a>
+    </div>
+  </div>
+
+  <div class="links" style="margin-top:14px;">
+    <a href="https://kokkai.ndl.go.jp/txt/122205254X00320261008" target="_blank" rel="noopener">この会議録の全文（国立国会図書館 国会会議録検索システム）</a>
+  </div>
+</article>
+
+<!-- ===== 参議院 ===== -->
+<article class="card">
+  <div class="card-head">
+    <span class="house">参議院 本会議 第2号</span>
+    <span class="stage">区分：質疑のみ</span>
+  </div>
+  <h3>国務大臣の演説に関する件（第二日）</h3>
+  <div class="meta">午前10時1分開議・午前11時37分<button class="term" data-term="散会">散会</button>｜<button class="term" data-term="議事日程">議事日程</button>第二号</div>
+
+  <div class="decided"><b>決まったこと：</b>なし。この日は質疑のみで、採決は行われませんでした。質疑は終わらず、残りは次会に継続されました。</div>
+
+  <div class="qa">
+    <div class="speaker">田名部匡代<span class="party">立憲民主・無所属</span></div>
+    <h4>質問の要点</h4>
+    <ul>
+      <li>被災者支援について、個別避難計画や福祉避難所など避難から避難生活まで命を守る体制と、被災者支援に当たる民間団体への平時の財政支援についてただした。</li>
+      <li>政府の掲げる「責任ある積極財政」について、物価上昇を上回る賃金の増加や地域経済への効果を、どのような指標でいつまでに検証するのか、事業を縮小・終了する判断基準と検証結果の公表についてただした。</li>
+      <li>飲食料品の消費税率引下げと就業者負担軽減支援金について、税率を戻す時点で支援金の対象とならない人への対応と、所得階層・世帯類型ごとに家計の負担がどう変わるかの試算をいつ国会に示すのかをただした。</li>
+      <li>米政策と農家への支援、簗農林水産大臣の予算に関する発言、気候変動対策、日米関係、拉致問題、中東情勢、安全保障関連三文書の見直し、政府の広報予算についてもただした。</li>
+    </ul>
+    <h4>答弁の要点</h4>
+    <ul>
+      <li>高市早苗 内閣総理大臣：被災者への支援について、個別避難計画の作成を自治体に促し、作成が進まない自治体への人員・財政支援を実施していると述べた。また、被災者一人一人の状況に応じた支援につなげる災害ケースマネジメントを実施すると述べた。</li>
+      <li>簗和生 農林水産大臣：本年5月の党の会合における自身の発言は事実と異なるものであり、不適切だったと自覚し、発言を撤回して謝罪したと述べた。</li>
+    </ul>
+    <div class="links">
+      <a href="https://kokkai.ndl.go.jp/txt/122215254X00220261008/2" target="_blank" rel="noopener">質問の原文（公式会議録）</a>
+      <a href="https://kokkai.ndl.go.jp/txt/122215254X00220261008/3" target="_blank" rel="noopener">総理答弁の原文</a>
+    </div>
+  </div>
+
+  <div class="qa">
+    <div class="speaker">青木一彦<span class="party">自由民主党・無所属の会</span></div>
+    <h4>質問の要点</h4>
+    <ul>
+      <li>飲食料品の消費税率引下げと就業者負担軽減支援金の導入、その財源の確保についてただした。税率を2年後に戻すことと支援金の関係についてもただした。</li>
+      <li>積極財政の方針を総理自ら国際金融市場へ発信すること、物価高対策についてただした。</li>
+      <li>地方創生の足掛かりとなる関係人口の増加、地域の産業人材育成、国境離島などの条件不利地域への取組についてただした。</li>
+      <li>自然災害への対応とインフラ対策、AI時代における原子力政策、外交・安全保障上の戦略についてもただした。</li>
+    </ul>
+    <h4>答弁の要点</h4>
+    <ul>
+      <li>高市早苗 内閣総理大臣：給付付き税額控除を改革の本丸とし、飲食料品の消費税率を2年間に限って引き下げると述べた。中低所得の現役勤労者について、税・社会保険料の負担軽減を通じて手取りが増えるようにすると述べた。</li>
+      <li>片山さつき 財務大臣：飲食料品の消費税率引下げ等の財源は、特例公債に頼らずに確保すると述べた。</li>
+    </ul>
+    <blockquote>
+      「飲食料品の消費税率引下げ等の財源については、高市内閣として、市場の信認を得られるよう、特例公債に頼らずに確保することとしており」
+      <span class="src">原文抜粋：片山さつき 財務大臣の答弁</span>
+    </blockquote>
+    <div class="links">
+      <a href="https://kokkai.ndl.go.jp/txt/122215254X00220261008/6" target="_blank" rel="noopener">質問の原文（公式会議録）</a>
+      <a href="https://kokkai.ndl.go.jp/txt/122215254X00220261008/7" target="_blank" rel="noopener">総理答弁の原文</a>
+      <a href="https://kokkai.ndl.go.jp/txt/122215254X00220261008/8" target="_blank" rel="noopener">財務大臣答弁の原文</a>
+    </div>
+  </div>
+
+  <div class="links" style="margin-top:14px;">
+    <a href="https://kokkai.ndl.go.jp/txt/122215254X00220261008" target="_blank" rel="noopener">この会議録の全文（国立国会図書館 国会会議録検索システム）</a>
+  </div>
+</article>
+
+<h2 class="sec">用語集（押すと意味が表示されます）</h2>
+<div class="glossary" id="glossary"></div>
+
+<h2 class="sec">政治の基礎</h2>
+<div class="basics">
+  <h3>国会の種類</h3>
+  <ul>
+    <li><button class="term" data-term="常会">常会（通常国会）</button>：毎年1月に召集され、会期は150日間。予算や法律案を審議する中心の国会。</li>
+    <li><button class="term" data-term="臨時会">臨時会（臨時国会）</button>：必要に応じて召集される国会。このページの第222回国会は臨時会。</li>
+    <li><button class="term" data-term="特別会">特別会（特別国会）</button>：衆議院の解散・総選挙の後に召集され、内閣総理大臣の指名を行う国会。</li>
+  </ul>
+  <h3>法律ができるまで</h3>
+  <ol>
+    <li><button class="term" data-term="法律案">法律案</button>が国会に提出される（内閣または議員が提出）。</li>
+    <li><button class="term" data-term="本会議">本会議</button>で<button class="term" data-term="趣旨説明">趣旨説明</button>と<button class="term" data-term="質疑">質疑</button>が行われ、<button class="term" data-term="委員会">委員会</button>に<button class="term" data-term="付託">付託</button>される。</li>
+    <li>委員会で審査し、<button class="term" data-term="討論">討論</button>・<button class="term" data-term="採決">採決</button>を行う。</li>
+    <li>本会議で委員長が報告し、討論・採決を行う。可決されると、もう一方の議院に送られる。</li>
+    <li>もう一方の議院でも同じ手続きを経て可決されると、法律として成立する。両院の結論が異なる場合は<button class="term" data-term="両院協議会">両院協議会</button>や<button class="term" data-term="衆議院の優越">衆議院の優越</button>の手続きが関わることがある。</li>
+  </ol>
+  <h3>このページの方針</h3>
+  <ul>
+    <li>要約は公式の会議録に基づく事実の圧縮のみで、評価・解説・解釈は入れていません。</li>
+    <li>議題の並び順は手続きの重さによる機械的な基準で決めています（ページ上部に明記）。</li>
+    <li>正確な内容は、各カードのリンク先にある公式会議録で確認できます。</li>
+  </ul>
+</div>
+
+<footer class="site">
+  出典：国立国会図書館「国会会議録検索システム」（公式APIにより取得）｜対象：2026年10月8日 衆議院本会議第3号・参議院本会議第2号<br>
+  作成：フラグメント観測（試作ページ）
+</footer>
+
+</div>
+
+<div class="sheet-back" id="sheetBack"></div>
+<div class="sheet" id="sheet" role="dialog" aria-modal="true">
+  <button class="close" id="sheetClose" aria-label="閉じる">×</button>
+  <h3 id="sheetTitle"></h3>
+  <div class="yomi" id="sheetYomi"></div>
+  <p id="sheetBody"></p>
+</div>
+
+<script>
+var DICT = {
+  "本会議": {y:"ほんかいぎ", d:"議院の全議員で構成される会議。法案の可決・否決など、その議院の最終的な意思決定は本会議で行われる。"},
+  "委員会": {y:"いいんかい", d:"本会議に先立ち、議案を専門的・詳細に審査するために設けられる少人数の会議。常設の常任委員会と、必要に応じて置かれる特別委員会がある。"},
+  "所信表明演説": {y:"しょしんひょうめいえんぜつ", d:"内閣総理大臣が臨時会や特別会の冒頭に、衆参両院の本会議で、当面の課題に対する内閣の方針を示す演説。通常国会の冒頭に行われる施政方針演説と区別される。"},
+  "施政方針演説": {y:"しせいほうしんえんぜつ", d:"毎年1月に召集される通常国会（常会）の冒頭で、内閣総理大臣が内政・外交全般にわたる政府の方針を示す演説。"},
+  "代表質問": {y:"だいひょうしつもん", d:"内閣総理大臣や閣僚の演説の後に、各党・会派の代表者が本会議で行う質問。"},
+  "質疑": {y:"しつぎ", d:"議案や演説について議員が質問し、提出者や国務大臣などが答える手続き。"},
+  "答弁": {y:"とうべん", d:"質問に対して、内閣総理大臣・国務大臣・政府参考人などが答えること。"},
+  "採決": {y:"さいけつ", d:"議長が議員の賛否を問い、議案などを可決するか否決するかを決める手続き。起立による方法や記名投票などがある。"},
+  "討論": {y:"とうろん", d:"採決の前に、議員が議案に対する賛成・反対の意見を表明する手続き。"},
+  "趣旨説明": {y:"しゅしせつめい", d:"議案の提出者が、審議の初めに、その議案の目的や内容を説明すること。"},
+  "付託": {y:"ふたく", d:"本会議で、議案を審査のために委員会に送ること。"},
+  "議案": {y:"ぎあん", d:"国会で審議される法律案・予算などの案件の総称。"},
+  "法律案": {y:"ほうりつあん", d:"法律を制定・改正・廃止するための議案。内閣が提出するものと、議員が提出するものがある。"},
+  "会派": {y:"かいは", d:"国会の中で行動を共にする議員の団体。政党に所属する議員によるものが中心で、無所属の議員が参加する場合もある。"},
+  "与党": {y:"よとう", d:"内閣を構成し、政権を担っている政党・会派。"},
+  "野党": {y:"やとう", d:"政権を担っていない政党・会派。"},
+  "国務大臣": {y:"こくむだいじん", d:"内閣を構成する大臣。内閣総理大臣により任命され、各省庁や担当分野の行政を担う。"},
+  "議長": {y:"ぎちょう", d:"各議院の会議を主宰し、院内の秩序を保つ役職。その議院の議員の中から選ばれる。"},
+  "常会": {y:"じょうかい", d:"毎年1月に召集される国会。通常国会とも呼ばれる。会期は150日間で、年に一度開かれる。"},
+  "臨時会": {y:"りんじかい", d:"常会とは別に、必要に応じて召集される国会。臨時国会とも呼ばれる。"},
+  "特別会": {y:"とくべつかい", d:"衆議院の解散による総選挙の後に召集される国会。特別国会とも呼ばれ、内閣総理大臣の指名が行われる。"},
+  "衆議院の優越": {y:"しゅうぎいんのゆうえつ", d:"両院の議決が異なった場合に、予算の先議や内閣総理大臣の指名などについて、衆議院の議決が優先される憲法上の仕組み。"},
+  "両院協議会": {y:"りょういんきょうぎかい", d:"両院の議決が異なった場合に、意見を調整するために開かれる、両院の議員で構成される会議。"},
+  "定足数": {y:"ていそくすう", d:"会議を開いて議事を進め、議決するために必要とされる最低限の出席議員数。"},
+  "修正案": {y:"しゅうせいあん", d:"審議中の議案の内容を改めるために提出される案。"},
+  "閉会中審査": {y:"へいかいちゅうしんさ", d:"国会の閉会中に、委員会が議案の審査を続ける手続き。"},
+  "国政調査権": {y:"こくせいちょうさけん", d:"各議院が国政に関して調査し、証人の出頭や証言、記録の提出を求めることができる憲法上の権能。"},
+  "内閣不信任決議": {y:"ないかくふしんにんけつぎ", d:"衆議院が内閣を信任しないとする決議。可決されると、内閣は10日以内に衆議院を解散しない限り総辞職しなければならない。"},
+  "散会": {y:"さんかい", d:"その日の会議を終えること。残った案件は次回の会議に持ち越される。"},
+  "議事日程": {y:"ぎじにってい", d:"その日の本会議で取り上げる案件と、その順序を示した表。"},
+  "財政演説": {y:"ざいせいえんぜつ", d:"通常国会の冒頭で財務大臣が行う、財政政策の方針を示す演説。施政方針演説などと合わせて政府四演説と呼ばれる。"},
+  "記名投票": {y:"きめいとうひょう", d:"採決の方法の一つ。議員が賛成・反対を記した票を投じ、誰がどう投票したかが記録に残る。"}
+};
+
+var sheet = document.getElementById('sheet');
+var back = document.getElementById('sheetBack');
+function openTerm(name){
+  var e = DICT[name];
+  if(!e) return;
+  document.getElementById('sheetTitle').textContent = name;
+  document.getElementById('sheetYomi').textContent = e.y;
+  document.getElementById('sheetBody').textContent = e.d;
+  sheet.classList.add('open');
+  back.classList.add('open');
+}
+function closeTerm(){
+  sheet.classList.remove('open');
+  back.classList.remove('open');
+}
+document.querySelectorAll('.term').forEach(function(b){
+  b.addEventListener('click', function(){ openTerm(b.getAttribute('data-term')); });
+});
+document.getElementById('sheetClose').addEventListener('click', closeTerm);
+back.addEventListener('click', closeTerm);
+document.addEventListener('keydown', function(ev){ if(ev.key === 'Escape') closeTerm(); });
+
+var gl = document.getElementById('glossary');
+Object.keys(DICT).forEach(function(k){
+  var btn = document.createElement('button');
+  btn.textContent = k;
+  btn.addEventListener('click', function(){ openTerm(k); });
+  gl.appendChild(btn);
+});
+</script>
+<script data-goatcounter="https://fragment-kokkai.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
